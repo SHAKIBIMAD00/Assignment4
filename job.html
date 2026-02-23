@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="job.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <h1 class="title">Job Application Tracker</h1>
+
+  <div class="stats" >
+    <div class="card stat" onclick="filterJobs('all')">
+      <p>Total</p>
+      <h2 id="total">8</h2>
+    </div>
+    <div class="card stat" onclick="filterJobs('interview')">
+      <p>Interview</p>
+      <h2 id="interviewCount">0</h2>
+    </div>
+    <div class="card stat" onclick="filterJobs('reject')">
+      <p>Rejected</p>
+      <h2 id="rejectCount">0</h2>
+    </div>
+  </div>
+<div class="jobsav">
+    <div class="jotex">
+        <h1>Jobs Available</h1>
+        <p>8 jobs</p>
+    </div>
+</div>
+  <div class="tabs">
+    <button class="tab-btn" onclick="filterJobs('all')">All</button>
+    <button class="tab-btn" onclick="filterJobs('interview')">Interview</button>
+    <button class="tab-btn" onclick="filterJobs('reject')">Rejected</button>
+  </div>
+
+  <div class="empty">
+    <img src="./jobs.png" alt="">
+    <h3>No jobs available</h3>
+    <p>Check back soon for new job opportunities</p>
+  </div>
+
+  <div class="jobs">
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+    <div class="card job applied">
+      <button class="delete-btn"><i class="fa-solid fa-basket-shopping"></i></button>
+      <h3>Mobile First Corp</h3>
+      <p>Frontend Developer (React.js)</p>
+      <p>Remote • Full-time • $90,000 - $120,000</p>
+      <span class="status">NOT APPLIED</span>
+      <p>Build responsive web applications using React.js. Collaborate with UI/UX designers to create modern user interfaces.</p>
+      <div class="actions">
+        <button class="interview">Interview</button>
+        <button class="reject">Rejected</button>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+  <script src="job.js"></script>
+</body>
+</html>
