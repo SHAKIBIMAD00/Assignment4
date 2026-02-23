@@ -44,10 +44,10 @@ body {
     size: 24px;
     font-weight: 700;
 }
-}
 
-.jotex{
-    display: flex;
+
+.jobtex{
+ display: flex;
 justify-content: space-between;
 
 }
@@ -55,6 +55,7 @@ justify-content: space-between;
     font-family: inter;
     size: 44px;
     font-weight: 700;
+    width: 50%;
 }
 .stats {
   display: flex;
