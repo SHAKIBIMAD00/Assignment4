@@ -91,6 +91,8 @@ justify-content: space-between;
 }
 
 .tab-btn {
+  font-size: 17px;
+  font-weight: 400;
   padding: 10px 20px;
   margin-right: 10px;
   border: none;
